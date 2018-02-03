@@ -1,0 +1,36 @@
+{
+  "name": "treemap-calc",
+  "version": "0.0.1",
+  "description": "Treemap calculator",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angryobject/treemap-calc.git"
+  },
+  "main": "dist/index.umd.js",
+  "module": "dist/index.es.js",
+  "scripts": {
+    "precommit": "lint-staged && jest",
+    "test": "jest",
+    "build": "NODE_ENV=production rollup -c"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.{json,css,md}": ["prettier --write", "git add"]
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "jest": "^22.1.4",
+    "lint-staged": "^6.1.0",
+    "prettier": "^1.10.2",
+    "rollup": "^0.55.3",
+    "rollup-plugin-babel": "^3.0.3"
+  }
+}

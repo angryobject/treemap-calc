@@ -1,0 +1,13 @@
+**/__mocks__/**
+**/__tests__/**
+**/*.test.js
+yarn.lock
+.gitignore
+.gitattributes
+.editorconfig
+.prettierrc
+.eslintrc
+jest.config.js
+.babelrc
+.browserlistrc
+rollup.config.js
